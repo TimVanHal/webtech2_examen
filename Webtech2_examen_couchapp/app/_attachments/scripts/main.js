@@ -30,6 +30,24 @@ function createDoc(){
 	});
 }
 
+function getDoc(){
+	var id = $("#id").val();
+	var html = "";
+	$.ajax({
+		type:		"GET",
+		url:		"../../" + id,
+		async:		true,
+		success:	function(data){
+			var arr = JSON.parse(data).rows;
+			html += arr;
+			$('#output').html(html);
+		},
+		error:		function(XMLHttpRequest, textStatus, errorThrown){
+			console.log(errorThrown);
+		}
+	});
+}
+
 function buildOutput(){
 	var html = "<table>";
 	$.ajax({
