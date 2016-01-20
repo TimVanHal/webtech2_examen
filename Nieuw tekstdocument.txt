@@ -1,0 +1,3 @@
+Rails applicatie getest met urls van de vorm:
+http://localhost:3000/todo/new?entrydate=20/01/2016&enddate=21/01/2016&prio=1&desc=something&status=0
+http://localhost:3000/todo/filter?prio=2

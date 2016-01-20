@@ -17,7 +17,7 @@ server = CouchRest.new
 @todo.status = params[:status]
 @todo.save
 
-redirect_to new_path
+return @todo
 end
 
 def filter
