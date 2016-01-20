@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  entrydate: MyString
+  enddate: MyString
+  prio: MyString
+  desc: MyString
+  status: MyString
+
+two:
+  entrydate: MyString
+  enddate: MyString
+  prio: MyString
+  desc: MyString
+  status: MyString
